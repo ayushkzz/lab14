@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build & Test with Coverage') {
             steps {
-                sh 'mvn clean test'
+                bat 'mvn clean test'
             }
         }
     }
